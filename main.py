@@ -4,5 +4,6 @@ def main():
     print("Hello, mr. Sniper")
 
 #1 new comment
+#2 new comment
 
 main()
