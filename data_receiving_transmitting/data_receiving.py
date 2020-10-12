@@ -9,4 +9,4 @@ s.connect((HOST, PORT))
 
 while True:
     data = s.recv(100)
-    print(data)
+    print(data.strip().decode('utf-8'))

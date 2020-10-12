@@ -1,5 +1,6 @@
 import socket
 import serial
+import time
 
 HOST = ''
 PORT = 27016
@@ -16,4 +17,5 @@ ser = serial.Serial('COM5') # Вместо COM5 укажи свой порт
 while True:
     data = ser.readline()
     print(data.strip().decode('utf-8'))
+    time.sleep(0.01)
     clientsocket.send(data)
